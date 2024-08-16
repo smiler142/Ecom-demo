@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="Styles/mainpage.css">
+</head>
+<body>
+    <main class="full_sec">
+        <section class="sec1">
+            <header class="ecom_header">
+                <div class="logo">Sweava</div>
+                <ul class="navbar">
+                    <li>home</li>
+                    <li>team</li>
+                    <li>faq</li>
+                    <li>contact</li>
+                </ul>
+                <button class="dwl_btn1">Download App</button>
+                <div class="nav_tab_bar" onclick="navcollapse()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </header>
+            <div class="head_sec_det">
+                <h1 class="head">Shopping App for Gadgets and Gifts</h1>
+                <h2 class="sub_head">Get 10% off your first order when you spend over £40 on any product!</h2>
+            </div>
+            <button class="dwl_btn2">Download App</button>
+            <img src="Images/flying_left.png" id="pot_gra" alt="">
+            <img src="Images/blue_circle.svg" id="circle_mob_cont" alt="">
+            <img src="Images/yellow_circle.svg" id="circle2" alt="">
+            <img src="Images/yellow_circle.svg" id="circle3" alt="">
+            <img src="Images/pink_circle.svg" id="circle4" alt="">
+        </section>
+
+        <section class="sec2">
+            <h2 class="topic">How the app works</h2>
+            <div class="sec2_cont">
+                <div class="sec2_cont_pic">
+                    <img src="Images/mobile_ui_1.svg" alt="">
+                </div>
+                <div class="sec2_cont_det">
+                    <a href="#" class="thclr_cont">Create an account</a>
+                    <h1 class="head">Discover original products</h1>
+                    <h2 class="sub_head">There are more than 950 categories updated daily based on
+                        trending websites reviews an users rating.</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <div class="sec3_wrap">
+                <div class="sec3_cont">
+                    <h1 class="head">Experience products in AR</h1>
+                    <h2 class="sub_head">Have you tried Augmented Reality?
+                        Stop looking at boring galleries and start experiences each item.</h2>
+                </div>
+                <div class="sec3_pic">
+                    <img src="Images/mobile_ui_2_.svg" alt="">
+                </div>
+                <img src="Images/pink_circle.svg" id="sec_3_cir_1" alt="">
+                <img src="Images/pink_circle.svg" id="sec_3_cir_3" alt="">
+                <img src="Images/blue_circle.svg" id="sec_3_cir_4" alt="">
+                <img src="Images/blue_circle.svg" id="sec_3_cir_5" alt="">
+            </div>
+        </section>
+
+        <section class="sec4">
+            <div class="sec4_cont">
+                <div class="sec4_cont_pic">
+                    <img src="Images/mobile_ui_4.svg" alt="">
+                </div>
+                <div class="sec4_cont_det">
+                    <a href="#" class="thclr_cont">Original platform</a>
+                    <h1 class="head">Hottest deals around the web</h1>
+                    <h2 class="sub_head">Find the perfect gift or everyday goods
+                        right at your fingertips.</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec5">
+            <div class="sec5_wrap">
+                <div class="sec5_left">
+                    <div class="sec5_left_wrap">
+                        <h2 class="head_sec">Save time & money with exclusive offers from top stores</h2>
+                        <button class="dwl_btn3">Download App</button>
+                    </div>
+                </div>
+                <div class="sec5_right">
+                    <img class="sec5_pic" src="Images/music_player.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer class="foot_sec">
+            <div class="foot_left">
+                <h2 class="foot_det">Hey! Follow us on social media so you don't miss any offer.</h2>
+            </div>
+            <div class="foot_right">
+                <img class="foot_pers" src="Images/flying_right].svg" alt="">
+                <img id="foot_side1" src="Images/Saly-1.svg" alt="">
+                <img id="foot_side2" src="Images/Saly-2.svg" alt="">
+                <div class="social_link_box">
+                    <a href="#"><img class="link_yt" src="Images/youtube.svg" alt=""></a>
+                    <a href="#"><img class="link_ins" src="Images/facebook.svg" alt=""></a>
+                    <a href="#"><img class="link_twi" src="Images/twitter.svg" alt=""></a>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyrgt">Copywright 2021 <span style="font-size: 1em;">[SMILER]</span></div>
+    </main>
+    <img src="Images/yellow_circle.svg" id="circle1" alt="">
+    <img src="Images/blue_circle.svg" id="circle5" alt="">
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+
+    <script>
+
+        // var box = document.querySelector(".sec5");
+        // var boxBoundingRect = box.getBoundingClientRect();
+        // var boxCenter= {
+        //     x: boxBoundingRect.width/2,
+        //     y: boxBoundingRect.height/2,
+        //     lft: boxBoundingRect.left,
+        //     tp: boxBoundingRect.top
+        // };
+        // box.addEventListener("mousemove", e => {
+        //     box.style.transform = `rotateY(${(( (e.clientX - boxCenter.lft) - boxCenter.x) / e.clientX ) * 11.25 }deg) rotateX(${(( (e.clientY - boxCenter.tp) - boxCenter.y) / e.clientY )
+        //         * 11.25}deg)`;
+        // })
+        // box.addEventListener("mouseleave", e=>{
+        //     box.style.transform = 'none';
+        // })
+
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".sec3_cont", {
+            scrollTrigger: ".sec3_cont",
+            opacity: 1,
+            duration: 2,
+            delay: 1,
+            ease: "sine.out"
+        })
+
+        gsap.to(".sec3_pic", {
+            scrollTrigger: ".sec3_pic",
+            rotation: 360,
+            opacity: 1,
+            duration: 1.5,
+            delay: 2,
+            ease: "power1.out"
+        })
+
+
+        function navcollapse() {
+            let navbar = document.querySelector(".nav_tab_bar");
+            navbar.classList.toggle("changebar");
+
+            let navbarcont = document.querySelector(".navbar");
+
+            navbarcont.classList.toggle("nav_collapse");
+        }
+    </script>
+</body>
+
+</html>
